@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import {styles} from './style'
 
@@ -8,10 +8,10 @@ export const Match = ({navigation}) => {
       <Text>Match</Text>
 
       
-{/* 
+
       <TouchableOpacity onPress={()=>navigation.navigate('Mensagem')} >
         envie um oi
-      </TouchableOpacity> */}
+      </TouchableOpacity>
 
     </View>
   )
