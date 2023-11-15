@@ -5,7 +5,7 @@ import {styles} from './style'
 export const Match = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text>Match</Text>
+      <Text>It's Match</Text>
 
       
 

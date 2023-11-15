@@ -16,8 +16,9 @@ export const Routes = () => {
     <NavigationContainer>
       <Stack.Navigator>
       
-      
+      <Stack.Screen name="Match" component={Match} />
         <Stack.Screen
+
 
           name="Principal"
           component={Principal}
@@ -49,7 +50,7 @@ export const Routes = () => {
 
               />
 
-                <Stack.Screen name="Match" component={Match} />
+               
 
                  <Stack.Screen name="Mensagem" component={Mensagem} />
 
