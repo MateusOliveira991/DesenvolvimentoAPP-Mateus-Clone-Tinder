@@ -1,11 +1,18 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import style from './style.jsx'
+import {styles} from './style'
 
-export const Match = () => {
+export const Match = ({navigation}) => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Match</Text>
+
+      
+{/* 
+      <TouchableOpacity onPress={()=>navigation.navigate('Mensagem')} >
+        envie um oi
+      </TouchableOpacity> */}
+
     </View>
   )
 }
