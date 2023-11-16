@@ -1,15 +1,38 @@
 import { StyleSheet } from "react-native";
 
-
-
 export const styles = StyleSheet.create({
+  container: {
+    flex: 1, 
    
-        container: {
-          flex: 1,
-          backgroundColor: '#fff',
-          alignItems: 'center',
-          justifyContent: 'center',
-        },
+  },
+  msgContainerEnvio: {
+    marginLeft: 'auto', 
+    marginRight: 10,
+    marginBottom: 10,
+    backgroundColor: 'blue',
+    padding: 10,
+    borderRadius: 5,
+    alignSelf: 'flex-end',
+  },
+  msgInputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 30,
+    
+  },
+  msgInput: {
+    backgroundColor: 'gray',
+    padding: 10,
+    width: '80%',
+    borderRadius: 10,
+    opacity: 0.4,
+    marginBottom: 3,
+  },
+  msgTextEnvio: {
+    textAlign: 'right',
+    color: 'white',
+  },
+  
 
-
-})
+});
