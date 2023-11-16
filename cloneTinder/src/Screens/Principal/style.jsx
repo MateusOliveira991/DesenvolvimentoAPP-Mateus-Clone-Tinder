@@ -12,8 +12,12 @@ opcao: {
         flex: 1,
 
         flexDirection: "row",
-        justifyContent:"center",
         alignItems: 'flex-end',
+        justifyContent: "space-evenly",
+             
+
+
+        
 
 },
 

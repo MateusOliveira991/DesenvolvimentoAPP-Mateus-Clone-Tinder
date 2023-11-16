@@ -1,19 +1,25 @@
-import { View, Text, TouchableOpacity } from 'react-native'
-import React from 'react'
-import {styles} from './style'
+import { View, Text, Image, TouchableOpacity } from "react-native";
+import React from "react";
+import { styles } from "./style";
+import fotoa from "../../assets/fotoa.png";
 
-export const Match = ({navigation}) => {
+export const Match = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>It's Match</Text>
-
+      <View style={styles.imageContainer}>
+        <Image source={fotoa} style={styles.image} />
+        <View style={styles.overlay}>
+          <Text style={styles.textomatch}>It's a Match</Text>
+        </View>
+      </View>
       
-
-      <TouchableOpacity onPress={()=>navigation.navigate('Mensagem')} >
-        envie um oi
+      <TouchableOpacity
+        style={styles.touchableOpacity}
+        onPress={() => navigation.navigate('Mensagem')}
+      >
+        <Text style={styles.buttonText}>Envie um oi</Text>
       </TouchableOpacity>
-
+      
     </View>
-  )
-}
-
+  );
+};
