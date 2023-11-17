@@ -16,7 +16,7 @@ export const Principal = ({ navigation }) => {
       <View style={styles.opcao}>
         <TouchableOpacity onPress={() => navigation.navigate("Mensagem")}>
           {" "}
-          {/*Retorna perfil anterior */}
+          {/*tinder gold */}
           <Ionicons name="refresh-circle-outline" size={40} color="#f8c43e" />
         </TouchableOpacity>
 
@@ -40,6 +40,12 @@ export const Principal = ({ navigation }) => {
           {" "}
           {/*Dar like*/}
           <Ionicons name="heart-circle-outline" size={54} color="#37cdc2" />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate("Mensagem")}>
+          {" "}
+          {/*tinder gold */}
+          <MaterialCommunityIcons name="lightning-bolt-circle" size={40} color="purple" />
         </TouchableOpacity>
       </View>
     </View>

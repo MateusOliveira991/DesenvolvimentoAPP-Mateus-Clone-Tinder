@@ -22,12 +22,13 @@ export const styles = StyleSheet.create({
     
   },
   msgInput: {
-    backgroundColor: 'gray',
+    backgroundColor: '#DCDCDC',
     padding: 10,
     width: '80%',
     borderRadius: 10,
     opacity: 0.4,
     marginBottom: 3,
+    
   },
   msgTextEnvio: {
     textAlign: 'right',
