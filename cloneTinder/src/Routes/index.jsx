@@ -9,6 +9,7 @@ import { Octicons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { View, TouchableOpacity } from "react-native";
 import { AntDesign } from '@expo/vector-icons';
+import { Premium } from "../Screens/Premium";
 
 const Stack = createNativeStackNavigator();
 
@@ -71,7 +72,10 @@ export const Routes = () => {
             ),
           }}
         />
-        <Stack.Screen name="Mensagem" component={Mensagem} />
+
+          <Stack.Screen name="Premium" component={Premium} options={{title: ''}}/>
+
+        <Stack.Screen name="Mensagem" component={Mensagem}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
