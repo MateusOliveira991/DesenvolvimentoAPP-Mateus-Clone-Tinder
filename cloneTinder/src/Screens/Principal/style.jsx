@@ -15,11 +15,10 @@ opcao: {
         alignItems: 'flex-end',
         justifyContent: "space-evenly",
              
-
-
-        
-
 },
+
+
+
 
 
 })

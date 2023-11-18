@@ -11,23 +11,21 @@ export const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 20,
+        color: '#eeb600',
       },
-      optionsContainer: {
-        flexDirection: 'row', 
-        justifyContent: 'space-between', 
-        width: '100%', 
-        marginBottom: 20,
-      },
-      subscriptionOption: {
+     
+      planos: {
         flex: 1, 
-        height: 150,
-        // backgroundColor: 'lightblue',
-        justifyContent: 'center',
+        backgroundColor: 'lightblue',
         alignItems: 'center',
-        marginHorizontal: 5, 
+        marginHorizontal: 100, 
         borderRadius: 10, 
+        width: '100%',
+        justifyContent: 'center',
+      
+       
       },
-      subscriptionOptionText: {
+      valor: {
         fontSize: 16,
         fontWeight: 'bold',
         color: 'black',
@@ -42,4 +40,6 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: 'bold',
       },
+
+      
     });

@@ -73,7 +73,11 @@ export const Routes = () => {
           }}
         />
 
-          <Stack.Screen name="Premium" component={Premium} options={{title: ''}}/>
+          <Stack.Screen name="Premium" component={Premium} options={{title: 'Recurso Premium'}}
+
+            
+          
+          />
 
         <Stack.Screen name="Mensagem" component={Mensagem}/>
       </Stack.Navigator>
