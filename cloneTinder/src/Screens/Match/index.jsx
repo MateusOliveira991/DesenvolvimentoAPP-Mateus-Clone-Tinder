@@ -1,13 +1,15 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { styles } from "./style";
-import fotoa from "../../assets/fotoa.png";
+import tinder from "../../assets/tinder.png";
+
 
 export const Match = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <Image source={fotoa} style={styles.image} />
+        <Image source={tinder} style={styles.image} />
+        
         <View style={styles.overlay}>
           <Text style={styles.textomatch}>It's a Match</Text>
         </View>

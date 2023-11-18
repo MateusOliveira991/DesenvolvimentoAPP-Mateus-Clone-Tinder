@@ -13,6 +13,13 @@ export const styles = StyleSheet.create({
         marginBottom: 20,
         color: '#eeb600',
       },
+
+      descricao: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        textAlign: 'center',
+
+      },
      
       planos: {
         flex: 1, 
@@ -22,7 +29,8 @@ export const styles = StyleSheet.create({
         borderRadius: 10, 
         width: '100%',
         justifyContent: 'center',
-      
+        margin: 14,
+             
        
       },
       valor: {

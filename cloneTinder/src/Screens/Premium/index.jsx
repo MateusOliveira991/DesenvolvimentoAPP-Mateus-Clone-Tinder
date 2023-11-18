@@ -9,7 +9,7 @@ export const Premium = ({ navigation }) => {
       <Fontisto name="tinder" size={30} color="#eeb600" />
       <Text style={styles.title}>Tinder Gold</Text>
 
-      <Text style={styles.description}>
+      <Text style={styles.descricao}>
         Desbloqueie recursos premium para melhorar sua experiência no Tinder.
       </Text>
 
@@ -20,6 +20,8 @@ export const Premium = ({ navigation }) => {
       
      
       {/* Opções de assinatura */}
+
+      
       <TouchableOpacity style={styles.planos}>
         <Text style={styles.valor}>1 mês - R$29.99</Text>
       </TouchableOpacity>
@@ -37,7 +39,7 @@ export const Premium = ({ navigation }) => {
         style={styles.backButton}
         onPress={() => navigation.goBack()}
       >
-        <Text style={styles.backButtonText}>Voltar</Text>
+        <Text style={styles.backButtonText}>Aderir</Text>
       </TouchableOpacity>
     </View>
   );

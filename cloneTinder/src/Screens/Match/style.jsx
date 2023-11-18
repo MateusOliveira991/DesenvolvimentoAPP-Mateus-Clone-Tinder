@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   textomatch: {
-    fontSize: 64,
+    fontSize: 94,
     fontWeight: 'bolder',
     color: '#37cdc2',
     textAlign: 'center',

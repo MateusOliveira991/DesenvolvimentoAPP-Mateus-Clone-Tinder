@@ -1,34 +1,55 @@
-import { View, Image, TouchableOpacity } from "react-native";
-import React from "react";
+import { View, Image, TouchableOpacity, Text } from "react-native";
+import React, { useState } from "react"; 
 import { styles } from "./style";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import fotoa from "../../assets/fotoa.png";
+import rodrigo from "../../assets/rodrigo.jpg";
+import { LinearGradient } from 'expo-linear-gradient';
 
 export const Principal = ({ navigation }) => {
+  const [imagem, setImagem] = useState(fotoa); 
+  const [texto, setTexto] = useState("Mateus 32");
+
+  const handleFechar = () => {
+    if (imagem === fotoa) {
+      setImagem(rodrigo);
+      setTexto("Rodrigo 45");
+    } else {
+      setImagem(fotoa);
+      setTexto("Mateus 32");
+    }
+  };
+
   return (
-
-    
-    <View style={styles.container}>
-      <Image source={fotoa} style={{ width: '100%', height: '100%' }} />
-
+    <LinearGradient
+      colors={['black','black', '#15400e', 'black']}
+      style={styles.container}
+    >
+      <Image source={imagem} style={{ width: '100%', height: '55%', marginTop: 90 }} />
       
+      <Text
+        style={{
+          fontSize: 20,
+          fontWeight: "bold",
+          fontFamily: "arial",
+          marginLeft: 2,
+          color: "white",
+        }}
+      >
+        {texto}
+      </Text>
+
       <View style={styles.opcao}>
         <TouchableOpacity onPress={() => navigation.navigate("Premium")}>
-          {" "}
-          {/*tinder gold */}
           <Ionicons name="refresh-circle-outline" size={40} color="#f8c43e" />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => navigation.navigate("Principal")}>
-          {" "}
-          {/*Dar não */}
-          <Ionicons name="close-circle-outline" size={54} color="#f45266" />
+          <Ionicons name="close-circle-outline" size={54} color="#f45266" onPress={handleFechar} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => navigation.navigate("Match")}>
-          {" "}
-          {/*super Like */}
           <MaterialCommunityIcons
             name="star-circle-outline"
             size={40}
@@ -37,17 +58,13 @@ export const Principal = ({ navigation }) => {
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => navigation.navigate("Match")}>
-          {" "}
-          {/*Dar like*/}
           <Ionicons name="heart-circle-outline" size={54} color="#37cdc2" />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => navigation.navigate("Premium")}>
-          {" "}
-          {/*tinder gold */}
           <MaterialCommunityIcons name="lightning-bolt-circle" size={40} color="purple" />
         </TouchableOpacity>
       </View>
-    </View>
+    </LinearGradient>
   );
 };

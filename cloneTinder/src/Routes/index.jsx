@@ -17,6 +17,8 @@ export const Routes = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+
+      
         <Stack.Screen
           name="Principal"
           component={Principal}
@@ -73,11 +75,7 @@ export const Routes = () => {
           }}
         />
 
-          <Stack.Screen name="Premium" component={Premium} options={{title: 'Recurso Premium'}}
-
-            
-          
-          />
+<Stack.Screen name="Premium" component={Premium} options={{title: 'Recurso Premium'}}/>
 
         <Stack.Screen name="Mensagem" component={Mensagem}/>
       </Stack.Navigator>
